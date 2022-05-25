@@ -11,6 +11,7 @@ function App() {
     fetch("https://dog.ceo/api/breeds/list/all")
       .then((response) => {
         if (response.status === 200 || response.ok) {
+     
           return response.json();
         } else {
           throw new Error(`HTTP error status: ${response.status}`);
